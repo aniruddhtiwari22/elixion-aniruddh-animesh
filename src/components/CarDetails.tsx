@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { FullscreenImageViewer } from '@/components/FullscreenImageViewer';
 import { 
   Phone, 
   Mail, 
@@ -27,6 +28,7 @@ interface CarDetailsProps {
 export const CarDetails = ({ car, isOpen, onClose }: CarDetailsProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
+  const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);
 
   if (!car) return null;
 
@@ -47,7 +49,8 @@ export const CarDetails = ({ car, isOpen, onClose }: CarDetailsProps) => {
             <img 
               src={car.images[currentImageIndex]} 
               alt={car.name}
-              className="w-full h-64 lg:h-full object-cover"
+              className="w-full h-64 lg:h-full object-cover cursor-pointer hover:scale-105 transition-transform"
+              onClick={() => setIsFullscreenOpen(true)}
             />
             
             {/* Image Navigation */}
@@ -194,12 +197,21 @@ export const CarDetails = ({ car, isOpen, onClose }: CarDetailsProps) => {
                   <strong>Interested?</strong> Contact our Elixion specialists for personalized assistance
                 </p>
                 <p className="text-center mt-2 font-semibold text-primary">
-                  +91 98765 43210
+                  +91 9755106826
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
+
+        {/* Fullscreen Image Viewer */}
+        <FullscreenImageViewer
+          images={car.images}
+          currentIndex={currentImageIndex}
+          isOpen={isFullscreenOpen}
+          onClose={() => setIsFullscreenOpen(false)}
+          carName={car.name}
+        />
       </DialogContent>
     </Dialog>
   );

@@ -3,13 +3,19 @@ import { Car } from '@/types/car';
 // Import car images
 import landRoverDefender1 from '@/assets/cars/land-rover-defender-1.jpg';
 import landRoverDefender2 from '@/assets/cars/land-rover-defender-2.jpg';
+import landRoverDefenderBlack from '@/assets/cars/land-rover-defender-black.jpg';
 import toyotaFortuner1 from '@/assets/cars/toyota-fortuner-1.jpg';
 import toyotaFortuner2 from '@/assets/cars/toyota-fortuner-2.jpg';
+import toyotaFortunerBlack from '@/assets/cars/toyota-fortuner-black.jpg';
 import mahindraXuv7001 from '@/assets/cars/mahindra-xuv700-1.jpg';
 import mahindraXuv7002 from '@/assets/cars/mahindra-xuv700-2.jpg';
+import mahindraXuv700Black from '@/assets/cars/mahindra-xuv700-black.jpg';
 import mahindraScorpio1 from '@/assets/cars/mahindra-scorpio-1.jpg';
+import mahindraScorpioBlack from '@/assets/cars/mahindra-scorpio-black.jpg';
 import jeepWrangler1 from '@/assets/cars/jeep-wrangler-1.jpg';
+import jeepWranglerBlack from '@/assets/cars/jeep-wrangler-black.jpg';
 import toyotaLandCruiser1 from '@/assets/cars/toyota-landcruiser-1.jpg';
+import toyotaLandCruiserBlack from '@/assets/cars/toyota-landcruiser-black.jpg';
 
 export const cars: Car[] = [
   {
@@ -17,7 +23,7 @@ export const cars: Car[] = [
     name: 'Land Rover Defender',
     price: 'Rs 2.60 Crores',
     priceNumeric: 26000000,
-    images: [landRoverDefender1, landRoverDefender2],
+    images: [landRoverDefender1, landRoverDefender2, landRoverDefenderBlack],
     description: 'The most capable Land Rover ever. Built for the most challenging terrains with uncompromising luxury.',
     features: [
       'Terrain Response 2',
@@ -39,7 +45,7 @@ export const cars: Car[] = [
     name: 'Toyota Fortuner Legender',
     price: 'Rs 60 Lakhs',
     priceNumeric: 6000000,
-    images: [toyotaFortuner1, toyotaFortuner2],
+    images: [toyotaFortuner1, toyotaFortuner2, toyotaFortunerBlack],
     description: 'The premium SUV that combines legendary reliability with contemporary luxury and advanced technology.',
     features: [
       'Sequential LED DRLs',
@@ -61,7 +67,7 @@ export const cars: Car[] = [
     name: 'Mahindra XUV 700',
     price: 'Rs 32 Lakhs',
     priceNumeric: 3200000,
-    images: [mahindraXuv7001, mahindraXuv7002],
+    images: [mahindraXuv7001, mahindraXuv7002, mahindraXuv700Black],
     description: 'India\'s most advanced SUV with cutting-edge technology and premium comfort for the modern family.',
     features: [
       'AdrenoX Infotainment',
@@ -83,7 +89,7 @@ export const cars: Car[] = [
     name: 'Mahindra Scorpio N',
     price: 'Rs 28 Lakhs',
     priceNumeric: 2800000,
-    images: [mahindraScorpio1],
+    images: [mahindraScorpio1, mahindraScorpioBlack],
     description: 'The bold and rugged SUV that embodies power, performance, and adventure-ready capabilities.',
     features: [
       'Twin Peaks Design',
@@ -105,7 +111,7 @@ export const cars: Car[] = [
     name: 'Jeep Wrangler Rubicon',
     price: 'Rs 68 Lakhs',
     priceNumeric: 6800000,
-    images: [jeepWrangler1],
+    images: [jeepWrangler1, jeepWranglerBlack],
     description: 'The most capable SUV ever. Built for extreme off-road adventures with iconic Jeep design.',
     features: [
       'Rock-Trac 4WD System',
@@ -127,7 +133,7 @@ export const cars: Car[] = [
     name: 'Toyota Land Cruiser',
     price: 'Rs 3 Crores',
     priceNumeric: 30000000,
-    images: [toyotaLandCruiser1],
+    images: [toyotaLandCruiser1, toyotaLandCruiserBlack],
     description: 'The ultimate luxury SUV combining legendary off-road capability with unmatched luxury and reliability.',
     features: [
       'Multi-Terrain Select',
